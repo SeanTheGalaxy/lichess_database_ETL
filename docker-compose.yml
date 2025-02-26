@@ -74,8 +74,8 @@ services:
         #- POSTGRESQL_PORT=5000
     depends_on:
       - "airflow"
-    configs:
-      -  mode: 777
+    #configs:
+    #  -  mode: 777
     volumes:
       - airflow_worker_data:/bitnami
       - ./src:/opt/bitnami/airflow/dags
